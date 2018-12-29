@@ -85,31 +85,34 @@
             <div class="navbar-collapse collapse zakir-collapse">
                 <ul class="nav navbar-nav">
                     <li class="page-scroll">
-                        <a href="index.html#home">Home</a>
+                        <a href="#home">Home</a>
                     </li>
 
                     <li class="page-scroll">
-                        <a href="index.html#profile">Profile</a>
+                        <a href="#profile">Profile</a>
                     </li>
 
                     <li class="page-scroll">
-                        <a href="index.html#portfolio">Portfolio</a>
+                        <a href="#portfolio">Portfolio</a>
                     </li>
 
                     <li class="page-scroll">
-                        <a href="index.html#services">Services</a>
+                        <a href="#services">Services</a>
                     </li>
                     
                     <li class="page-scroll">
-                        <a href="index.html#price">Price</a>
+                        <a href="#price">Price</a>
                     </li>
 
                     <li class="page-scroll">
-                        <a href="index.html#references">References</a>
+                        <a href="#references">References</a>
                     </li>
 
                     <li class="page-scroll">
-                        <a href="index.html#skills">Skills</a>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -1092,6 +1095,151 @@ http://www.posterfamily.com/</p>
         <!-- //.container -->
     </section>
     <!-- //WORK PROCESS SECTION END -->
+    
+    
+    <!-- CONTACT SECTION START -->
+    <section id="contact" class="section">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="section-title">Contact Me</h2>
+                        <p class="section-subtitle">Have a project you'd like to discuss?</p>
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-12 -->
+                </div>
+                <!-- //.row -->
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+
+                        <!-- CONTACT FORM START -->
+                        <form data-netlify="true" method="POST" name="contact" id="contactForm" class="contact-form validate" role="form">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <div class="input-group input-group-lg">
+                                            <div class="input-group input-group-lg">
+                                                <input type="text" name="name" id="name" class="form-control required" placeholder="My Name is..." autocomplete="off">
+                                            </div>
+                                            <!-- //.input-group -->
+                                        </div>
+                                        <!-- //.input-group -->
+                                    </div>
+                                    <!-- //.form-group -->
+
+                                    <div class="form-group">
+                                        <label>Services:</label>
+
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="services[]" id="web-design" value="Web Design" class="form-control required">
+
+                                            <label for="web-design">Web Development</label>
+                                        </div>
+                                        <!-- //.checkbox -->
+
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="services[]" id="woocommerce" value="Woocommerce" class="form-control required">
+
+                                            <label for="woocommerce">Woocommerce</label>
+                                        </div>
+                                        <!-- //.checkbox -->
+
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="services[]" id="consulting" value="Consulting" class="form-control required">
+
+                                            <label for="consulting">Consulting</label>
+                                        </div>
+                                        <!-- //.checkbox -->
+                                    </div>
+                                    <!-- //.form-group -->
+
+                                    <div class="form-group">
+                                        <label>Project Class:</label>
+
+                                        <div class="radio">
+                                            <input type="radio" name="project_class" id="small" value="Small ($1000 - $3,000)" class="form-control required">
+
+                                            <label for="small">Small ($500 - $1,000)</label>
+                                        </div>
+                                        <!-- //.radio -->
+
+                                        <div class="radio">
+                                            <input type="radio" name="project_class" id="medium" value="Medium (> $3,000 - $10,000)" class="form-control required">
+
+                                            <label for="medium">Medium (> $1,000 - $3,000)</label>
+                                        </div>
+                                        <!-- //.radio -->
+
+                                        <div class="radio">
+                                            <input type="radio" name="project_class" id="big" value="Big (> 10,000)" class="form-control required">
+
+                                            <label for="big">Big (> 3,000)</label>
+                                        </div>
+                                        <!-- //.radio -->
+                                    </div>
+                                    <!-- //.form-group -->
+                                </div>
+                                <!-- //.col-md-5 -->
+
+                                <div class="col-md-7">
+                                    <div class="form-group">
+                                        <div class="input-group input-group-lg">
+                                            <input type="email" name="email" id="email" class="form-control required email" placeholder="Please respond at..." autocomplete="off">
+                                        </div>
+                                        <!-- //.input-group -->
+                                    </div>
+                                    <!-- //.form-group -->
+
+                                    <div class="form-group">
+                                        <div class="input-group input-group-lg">
+                                            <select name="subject" id="subject" class="select2 required" style="width: 100%">
+                                                <option value="I have a project for Zakir">I have a project for Zakir</option>
+                                                <option value="I would like to invite Zakir to an event">I would like to invite Zakir to an event</option>
+                                                <option value="I just want to say Hi!">I just want to say Hi!</option>
+                                            </select>
+                                        </div>
+                                        <!-- //.input-group -->
+                                    </div>
+                                    <!-- //.form-group -->
+
+                                    <div class="form-group">
+                                        <div class="input-group input-group-lg">
+                                            <textarea name="message" id="message" class="form-control required" placeholder="I wanna talk about..."></textarea>
+                                        </div>
+                                        <!-- //.input-group -->
+                                    </div>
+                                    <!-- //.form-group -->
+                                </div>
+                                <!-- //.col-md-7 -->
+                            </div>
+                            <!-- //.row -->
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <button id="submit" type="submit">Say Hello</button>
+                                    </div>
+                                    <!-- //.form-group -->
+                                </div>
+                                <!-- //.col-md-12 -->
+                            </div>
+                            <!-- //.row -->
+                        </form>
+                        <!-- //CONTACT FORM END -->
+
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //CONTACT SECTION END -->
+    
 
 <!-- FOOTER START -->
     <footer class="footer">
