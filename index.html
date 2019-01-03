@@ -6,19 +6,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-
+    <meta name="environment" content="production">
+	<meta name="application-name" content="zakirsajib.netlify.com">
+	<link rel="manifest" href="wp-content/themes/zsonline/manifest.json">
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 8]>
     <script src="wp-content/themes/zsonline/assets/plugins/modernizr.min.js"></script>
     <![endif]-->
 
     <title>Zakir Sajib Online &#8211; Full stack WordPress developer with Woocommerce experience</title>
-<link rel='dns-prefetch' href='http://fonts.googleapis.com' />
-<link rel='dns-prefetch' href='http://s.w.org' />
-<link rel='stylesheet' id='zsonline-style-css'  href='wp-content/themes/zsonline/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='Lato+Raleway-css'  href='https://fonts.googleapis.com/css?family=Lato:400,700%7CRaleway:400,700&ver=5.0.2' type='text/css' media='all' />
-<link rel='stylesheet' id='bootstrap-min-css'  href='wp-content/themes/zsonline/assets/plugins/bootstrap/css/bootstrap.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='ZakirOnlineMini-css'  href='wp-content/themes/zsonline/assets/css/zakir-min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='main'  href='wp-content/themes/zsonline/assets/critical.css' type='text/css' media='all' />
 <link rel="canonical" href="https://zakirsajib.netlify.com/" />
 <link rel='shortlink' href='https://zakirsajib.netlify.com/' />
 <link rel="icon" href="wp-content/uploads/2015/03/cropped-icon_512x512-96x96-32x32.png" sizes="32x32" />
@@ -33,7 +31,7 @@
     <![endif]-->
 
     <!-- HERO START -->
-    <header id="home" class="hero">
+    <header id="home" class="hero lazyload" data-bgset="wp-content/themes/zsonline/assets/images/bg-hero-1.jpg">
         <div class="hero-body">
             <div class="hero-text text-center">
                 <h1>I'm Zakir Sajib</h1>
@@ -341,7 +339,7 @@ I&#8217;m always keen to create new relationships with designers and web agencie
     <!-- //Price SECTION END -->
 
     <!-- REFERENCES SECTION START -->
-    <section id="references" class="section bg-image-yes">
+    <section id="references" class="section bg-image-yes lazyload" data-bgset="wp-content/themes/zsonline/assets/images/bg-references-1.jpg">
         <div class="container-fluid section-wrapper">
             <div class="section-content">
                 <div class="row">
@@ -876,7 +874,7 @@ http://www.posterfamily.com/</p>
 
 
     <!-- MILESTONES SECTION START -->
-    <section id="milestones" class="section bg-image-yes">
+    <section id="milestones" class="section bg-image-yes lazyload" data-bgset="wp-content/themes/zsonline/assets/images/bg-milestones-1.jpg">
         <div class="container-fluid section-wrapper">
             <div class="section-content">
                 <div class="row">
@@ -1245,19 +1243,13 @@ http://www.posterfamily.com/</p>
         <!-- //.container -->
     </footer>
     <!-- //FOOTER END -->
-<link rel='stylesheet' id='wpcore-css'  href='wp-content/themes/zsonline/assets/wpcore/wpcore.css' type='text/css' media='all' />
-<link rel='stylesheet' id='icons-style-css'  href='wp-content/themes/zsonline/assets/plugins/icons-mind/style.css' type='text/css' media='all' />
-<link rel='stylesheet' id='font-awesome-css'  href='wp-content/themes/zsonline/assets/plugins/fontawesome/css/font-awesome.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='magnificPopup-css'  href='wp-content/themes/zsonline/assets/plugins/magnificPopup/magnific-popup-min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='flexslider-css'  href='wp-content/themes/zsonline/assets/plugins/flexSlider/flexslider-min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='select2-css'  href='wp-content/themes/zsonline/assets/plugins/select2/css/select2-min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='morphext-css'  href='wp-content/themes/zsonline/assets/plugins/morphext/morphext.css' type='text/css' media='all' />
-<link rel='stylesheet' id='themename-red-skin-css'  href='wp-content/themes/zsonline/assets/css/colors/red.css' type='text/css' media='all' />
-<script type='text/javascript' src='wp-includes/js/jquery/jquery-ver=1.12.4.js'></script>
-<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min-ver=1.4.1.js'></script>
-<script type='text/javascript' async='async' src='wp-content/themes/zsonline/assets/plugins/lazysizes/lazysizes.min.js'></script>
-<script type='text/javascript' src='wp-content/themes/zsonline/assets/plugins/smoothscroll.js'></script>
-<script type='text/javascript' src='wp-content/themes/zsonline/assets/plugins/bootstrap/js/bootstrap.min.js'></script>
-<script type='text/javascript' src='wp-content/themes/zsonline/static/dist/js/app.min.js'></script>
+<link rel='stylesheet' href='wp-content/themes/zsonline/assets/noncritical.css' type='text/css' media='all' />
+<script src='wp-includes/js/jquery/jquery-ver=1.12.4.js'></script>
+<script src='wp-includes/js/jquery/jquery-migrate.min-ver=1.4.1.js'></script>
+<script src='wp-content/themes/zsonline/assets/plugins/lazysizes/ls.bgset.min.js'></script>
+<script async='async' src='wp-content/themes/zsonline/assets/plugins/lazysizes/lazysizes.min.js'></script>
+<script src='wp-content/themes/zsonline/assets/plugins/smoothscroll.js'></script>
+<script src='wp-content/themes/zsonline/assets/plugins/bootstrap/js/bootstrap.min.js'></script>
+<script src='wp-content/themes/zsonline/static/dist/js/app.min.js'></script>
 </body>
 </html>
