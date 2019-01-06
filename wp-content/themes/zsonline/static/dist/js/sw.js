@@ -3,7 +3,7 @@ self.addEventListener('install', function(e) {
     caches.open('your-magic-cache').then(function(cache) {
       return cache.addAll([
         '/',
-        '/wp-content/themes/zsonline/manifest.json',
+        '/manifest.json',
         '/wp-content/themes/zsonline/assets/images/bg-hero-1.webp',
         '/wp-content/themes/zsonline/assets/images/bg-milestones-1.webp',
         '/wp-content/themes/zsonline/assets/images/bg-references-1.webp',
