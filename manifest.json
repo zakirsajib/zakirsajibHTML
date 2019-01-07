@@ -5,6 +5,7 @@
   "background_color": "#171717",
   "display": "standalone",
   "orientation": "portrait",
+  "Scope": "/",
   "start_url": "https:\/\/zakirsajib.netlify.com",
   "icons": [
     {

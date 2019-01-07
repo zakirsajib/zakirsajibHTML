@@ -1,38 +1,37 @@
 const version = "1.0";
 const cacheName = 'zakirsajib-${version}';
-self.addEventListener('install', function(e) {
+self.addEventListener('install', e => {
   e.waitUntil(
-    caches.open('cacheName').then(function(cache) {
+    caches.open(cacheName).then(cache => {
       return cache.addAll([
-        'manifest.json',
-        'wp-content/themes/zsonline/assets/images/bg-hero-1.webp',
-        'wp-content/themes/zsonline/assets/images/bg-milestones-1.webp',
-        'wp-content/themes/zsonline/assets/images/bg-references-1.webp',
-        'wp-includes/js/jquery/jquery-1.12.4.js',
-        'wp-content/themes/zsonline/assets/plugins/lazysizes/ls.bgset.min.js',
-        'wp-content/themes/zsonline/assets/plugins/lazysizes/lazysizes.min.js',
-        'wp-content/themes/zsonline/assets/plugins/smoothscroll.js',
-        'wp-content/themes/zsonline/assets/plugins/bootstrap/js/bootstrap.min.js',
-        'wp-content/themes/zsonline/static/dist/js/app.min.js',
-        'wp-content/themes/zsonline/assets/critical.css',
-        'wp-content/themes/zsonline/assets/noncritical.css',
-      ]);
+        '/',
+        '/index.html',
+        '/wp-content/themes/zsonline/assets/images/bg-hero-1.webp',
+        '/wp-content/themes/zsonline/assets/images/bg-milestones-1.webp',
+        '/wp-content/themes/zsonline/assets/images/bg-references-1.webp',
+        '/wp-includes/js/jquery/jquery-1.12.4.js',
+        '/wp-content/themes/zsonline/assets/plugins/lazysizes/ls.bgset.min.js',
+        '/wp-content/themes/zsonline/assets/plugins/lazysizes/lazysizes.min.js',
+        '/wp-content/themes/zsonline/assets/plugins/smoothscroll.js',
+        '/wp-content/themes/zsonline/assets/plugins/bootstrap/js/bootstrap.min.js',
+        '/wp-content/themes/zsonline/static/dist/js/app.min.js',
+        '/wp-content/themes/zsonline/assets/critical.css',
+        '/wp-content/themes/zsonline/assets/noncritical.css',
+      ])
+          .then(() => self.skipWaiting());
     })
   );
 });
 
-self.addEventListener('fetch', function(event) {
-  if (event.request.url == 'https://zakirsajib.netlify.com/') {
-    console.info('responding to zakir-sajib fetch with Service Worker! ');
-    event.respondWith(fetch(event.request).catch(function(e) {
-      let out = {Gold: 1, Size: -1, Actions: []};
-      return new Response(JSON.stringify(out));
-    }));
-    return;
-  }
+self.addEventListener('activate', event => {
+  event.waitUntil(self.clients.claim());
+});
 
+self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request).then(function(response) {
+    caches.open(cacheName)
+      .then(cache => cache.match(event.request, {ignoreSearch: true}))
+      .then(response => {
       return response || fetch(event.request);
     })
   );
