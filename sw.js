@@ -21,6 +21,16 @@ self.addEventListener('install', function(e) {
 });
 
 self.addEventListener('fetch', function(event) {
+  if (event.request.url == 'https://zakirsajib.netlify.com/') {
+    console.info('responding to zakir-sajib fetch with Service Worker! ');
+    event.respondWith(fetch(event.request).catch(function(e) {
+      let out = {Gold: 1, Size: -1, Actions: []};
+      return new Response(JSON.stringify(out));
+    }));
+    return;
+  }
+
+self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request).then(function(response) {
       return response || fetch(event.request);
