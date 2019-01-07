@@ -4,7 +4,6 @@ self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open('cacheName').then(function(cache) {
       return cache.addAll([
-        '/',
         'manifest.json',
         'wp-content/themes/zsonline/assets/images/bg-hero-1.webp',
         'wp-content/themes/zsonline/assets/images/bg-milestones-1.webp',
