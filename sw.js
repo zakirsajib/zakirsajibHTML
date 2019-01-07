@@ -1,6 +1,8 @@
+const version = "1.0";
+const cacheName = 'zakirsajib-${version}';
 self.addEventListener('install', function(e) {
   e.waitUntil(
-    caches.open('your-magic-cache').then(function(cache) {
+    caches.open('cacheName').then(function(cache) {
       return cache.addAll([
         '/',
         'manifest.json',
