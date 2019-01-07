@@ -229,15 +229,7 @@
 <link rel="icon" href="wp-content/uploads/2015/03/cropped-icon_512x512-96x96-192x192.png" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="wp-content/uploads/2015/03/cropped-icon_512x512-96x96-180x180.png" />
 <meta name="msapplication-TileImage" content="wp-content/uploads/2015/03/cropped-icon_512x512-96x96-270x270.png" />
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-39208489-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-39208489-2');
-</script>
 </head>
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="66" class="home page-template page-template-frontpage page-template-frontpage-php page page-id-5">
@@ -1479,6 +1471,27 @@ He is a great freelancer and will be able to help you with your projects!</p>
         <!-- //.container -->
     </footer>
     <!-- //FOOTER END -->
+<script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' })
+          .then(function(registration) {
+                console.log('Service Worker Registered');
+          });
+        navigator.serviceWorker.ready.then(function(registration) {
+           console.log('Service Worker Ready');
+        });
+      }
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-39208489-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-39208489-2');
+</script>
+
 <script src='wp-includes/js/jquery/jquery-1.12.4.js'></script>
 <script defer='defer' src='wp-content/themes/zsonline/assets/plugins/lazysizes/ls.bgset.min.js'></script>
 <script async='async' src='wp-content/themes/zsonline/assets/plugins/lazysizes/lazysizes.min.js'></script>
