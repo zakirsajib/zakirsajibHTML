@@ -215,11 +215,19 @@
 }( typeof global !== "undefined" ? global : this ) );
 </script>
 <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, user-scalable=no">
 <meta name="environment" content="production">
 <meta name="application-name" content="zakirsajib.netlify.com">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#171717">
+<!-- Add to home screen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#171717">
+<meta name="apple-mobile-web-app-title" content="Zakir Sajib">
+<link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+<meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+<meta name="msapplication-TileColor" content="#171717">
 <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 8]>
 <script src="wp-content/themes/zsonline/assets/plugins/modernizr.min.js"></script>
@@ -1472,15 +1480,11 @@ He is a great freelancer and will be able to help you with your projects!</p>
     </footer>
     <!-- //FOOTER END -->
 <script>
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js', { scope: '/' })
-          .then(function(registration) {
-                console.log('Service Worker Registered');
-          });
-        navigator.serviceWorker.ready.then(function(registration) {
-           console.log('Service Worker Ready');
-        });
-      }
+      if ('serviceWorker' in navigator) {
+	  	navigator.serviceWorker
+            .register('./sw.js')
+            .then(function() { console.log('Service Worker Registered'); });
+        }
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39208489-2"></script>
