@@ -4,7 +4,8 @@ var urlsToCache = [
 	'/index.html',
 	'/wp-content/themes/zsonline/assets/images/bg-hero-1.webp',
 	'/wp-content/themes/zsonline/assets/images/bg-milestones-1.webp',
-	'/wp-content/themes/zsonline/assets/images/bg-references-1.webp'
+	'/wp-content/themes/zsonline/assets/images/bg-references-1.webp',
+	'/wp-includes/js/jquery/jquery-1.12.4.js',
 ];
 
 self.addEventListener('install', function(event) {
