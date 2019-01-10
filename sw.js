@@ -1,7 +1,8 @@
-var CACHE_NAME = 'my-site-cache-v1';
+var CACHE_NAME = 'zakirsajib-cache-v1';
 var urlsToCache = [
   	'/',
 	'/index.html',
+	'/manifest.json',
 	'/wp-content/themes/zsonline/assets/images/bg-hero-1.webp',
 	'/wp-content/themes/zsonline/assets/images/bg-milestones-1.webp',
 	'/wp-content/themes/zsonline/assets/images/bg-references-1.webp',
