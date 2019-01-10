@@ -10,7 +10,7 @@ var urlsToCache = [
     '/wp-content/themes/zsonline/assets/plugins/lazysizes/lazysizes.min.js',
     '/wp-content/themes/zsonline/assets/plugins/smoothscroll.js',
     '/wp-content/themes/zsonline/assets/plugins/bootstrap/js/bootstrap.min.js',
-    '/wp-content/themes/zsonline/static/dist/js/app.min.js'
+    '/wp-content/themes/zsonline/static/dist/app.min.js'
 ];
 
 self.addEventListener('install', function(event) {
