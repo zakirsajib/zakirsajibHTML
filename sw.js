@@ -12,7 +12,7 @@ var urlsToCache = [
 	'/wp-content/themes/zsonline/assets/plugins/bootstrap/js/bootstrap.min.js',
 	'/wp-content/themes/zsonline/static/dist/js/app.min.js',
 	'/wp-content/themes/zsonline/assets/critical.css',
-	'/wp-content/themes/zsonline/assets/noncritical.css',
+	'/wp-content/themes/zsonline/assets/noncritical.css'
 ];
 
 self.addEventListener('install', function(event) {
