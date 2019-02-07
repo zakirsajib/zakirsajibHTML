@@ -1,3 +1,4 @@
+.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
 @font-face{font-family:'flexslider-icon';src:url('fonts/flexslider-icon.eot');src:url('fonts/flexslider-icon-.eot#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');font-weight:normal;font-style:normal;font-display:swap}
 .flex-container a:hover,
 .flex-slider a:hover,
